@@ -1,0 +1,89 @@
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+        url('../img/corredor.jpg') no-repeat fixed;
+    background-size: cover;
+    font-family: var(--fonte-principal);
+    box-sizing: border-box;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    width: 100%;
+    padding-top: 80px;
+    padding-bottom: 20px;
+}
+
+.login-card {
+    background: var(--card-cinza);
+    padding: 50px 40px;
+    border-radius: 12px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    border-top: 5px solid var(--amarelo-destaque);
+}
+
+.login-card h2 {
+    color: var(--amarelo-destaque);
+    text-transform: uppercase;
+    margin: 0 0 15px 0;
+    font-size: 1.8rem;
+    letter-spacing: 1px;
+}
+
+.login-card p {
+    color: #ffffff;
+    margin: 0 0 35px 0;
+    font-size: 0.95rem;
+}
+
+.input-group {
+    text-align: left;
+    margin-bottom: 25px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 0.85rem;
+    color: var(--amarelo-destaque);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.login-card input {
+    margin-bottom: 5px;
+}
+
+.btn-login {
+    width: 100%;
+    padding: 15px;
+    background: var(--amarelo-destaque);
+    color: var(--texto-preto);
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: all 0.3s ease;
+}
+
+.btn-login:hover {
+    background: var(--amarelo-hover);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(255, 195, 0, 0.3);
+}
+
+.btn-login:active {
+    transform: translateY(0);
+}

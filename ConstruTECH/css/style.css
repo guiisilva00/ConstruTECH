@@ -1,0 +1,117 @@
+:root {
+    --fundo-escuro: #1a1a1a;
+    --card-cinza: #2d2d2d;
+    --amarelo-destaque: #ffc300;
+    --amarelo-hover: #e6b000;
+    --texto-claro: #f5f5f5;
+    --texto-preto: #1a1a1a;
+    --fonte-principal: 'Inter', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--fundo-escuro);
+    color: var(--texto-claro);
+    font-family: var(--fonte-principal);
+    margin: 0;
+    padding-top: 80px;
+}
+
+.title-sublinhado {
+    text-align: center;
+    margin-top: 0;
+    padding-bottom: 10px;
+    border-bottom: 2px solid var(--amarelo-destaque);
+    color: var(--amarelo-destaque);
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+input,
+select,
+textarea {
+    display: block;
+    width: 100%;
+    padding: 10px 12px;
+    font-size: 1rem;
+    border: 2px solid #444;
+    border-radius: 8px;
+    background: #3d3d3d;
+    color: white;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+}
+
+input:focus {
+    outline: none;
+    border-color: var(--amarelo-destaque);
+}
+
+.btn {
+    background-color: var(--amarelo-destaque);
+    color: var(--texto-preto);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    transition: 0.3s ease;
+}
+
+.btn:hover {
+    background-color: var(--amarelo-hover);
+}
+
+.amarelin {
+    color: var(--amarelo-destaque);
+}
+
+.msg-erro {
+    background: #ff4d4d;
+    color: whitesmoke;
+    padding: 12px;
+    border-radius: 6px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 40px auto;
+    background: var(--card-cinza);
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 15px;
+    background-color: var(--card-cinza);
+}
+
+thead th {
+    background-color: var(--amarelo-destaque);
+    color: var(--texto-preto);
+}
+
+th,
+td {
+    border: 1px solid #444;
+    text-align: left;
+    padding: 12px;
+}
+
+tr:nth-child(even) {
+    background-color: #3a3a3a;
+}

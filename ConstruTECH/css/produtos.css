@@ -1,0 +1,122 @@
+.form-cadastro {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background-color: var(--fundo-escuro);
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.form-busca {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: stretch;
+    background-color: var(--fundo-escuro);
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.form-busca input {
+    margin-bottom: 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+td a {
+    text-decoration: none;
+    font-size: 18px;
+    margin-right: 10px;
+    color: var(--amarelo-destaque);
+}
+
+.coluna-produto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    padding: 10px;
+}
+
+.coluna-produto img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 1px solid #444;
+}
+
+.coluna-acoes {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    align-items: center;
+    border: none;
+}
+
+.btn-acao {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 36px;
+    height: 36px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: all 0.2s ease-in-out;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.btn-acao:active {
+    transform: scale(0.95);
+}
+
+.btn-aumentar {
+    background-color: #72f397;
+    border: 1px solid #000000;
+}
+
+.btn-aumentar:hover {
+    background-color: #ceead6;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.btn-diminuir {
+    background-color: #fdd551;
+    border: 1px solid #000000;
+}
+
+.btn-diminuir:hover {
+    background-color: #feefc3;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.btn-remover {
+    background-color: #ff7c70;
+    border: 1px solid #000000;
+}
+
+.btn-remover:hover {
+    background-color: #fad2cf;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.title-cadastro {
+    font-size: 20px;
+    color: var(--texto-claro, #fff);
+    margin-bottom: 15px;
+    line-height: 1.2;
+    text-align: center;
+}

@@ -1,0 +1,112 @@
+.header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  background: rgba(26, 26, 26, 0.8); 
+  backdrop-filter: blur(4px);
+  border-bottom: 2px solid rgba(255, 195, 0, 0.2);
+  transition: 0.3s;
+  height: 80px;
+}
+
+.header.scrolled {
+  background-color: var(--fundo-escuro);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.6);
+  border-bottom: 2px solid var(--amarelo-destaque);
+}
+
+.header_title {
+  height: 100%;
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 20px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; 
+  background: transparent !important;
+  box-shadow: none !important;
+  border: none !important;
+}
+
+#title {
+    text-decoration: none !important;
+    border: none !important;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.logo-img {
+    height: 200px;
+    width: auto;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+#title:hover .logo-img {
+    transform: scale(1.05);
+}
+
+h1.logo {
+  font-size: 28px !important; 
+  color: var(--texto-claro) !important; 
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-decoration: none !important; 
+  border-bottom: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  display: flex;
+  align-items: center;
+  transition: 0.3s;
+}
+
+h1.logo span {
+  color: var(--amarelo-destaque) !important;
+  text-decoration: none !important;
+}
+
+#title:hover h1.logo, h1.logo:hover {
+  transform: scale(1.05);
+  color: var(--amarelo-destaque) !important;
+}
+
+.nav ul {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav a {
+  position: relative;
+  font-size: 16px;
+  color: var(--texto-claro);
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.nav a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 0%;
+  height: 2px;
+  background: var(--amarelo-destaque);
+  transition: 0.3s;
+}
+
+.nav a:hover {
+  color: var(--amarelo-destaque);
+}
+
+.nav a:hover::after {
+  width: 100%;
+}
