@@ -13,6 +13,6 @@ O **ConstruTECH** é um sistema web intuitivo voltado para o gerenciamento de es
 
 * **Backend:** PHP (Sessões e integração com PDO/MySQL).
 * **Database:** MySQL.
-* **Frontend:** HTML5, CSS3 e Google Fonts (Inter).
+* **Frontend:** HTML5 e CSS3.
 
 ---
