@@ -1,0 +1,141 @@
+.header {
+    position: fixed;
+    inset: 0 0 auto;
+    z-index: 999;
+    height: 76px;
+    border-bottom: 1px solid rgba(223, 229, 238, 0.82);
+    background: rgba(255, 255, 255, 0.86);
+    backdrop-filter: blur(18px);
+}
+
+.header_title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: min(1180px, calc(100% - 32px));
+    height: 100%;
+    margin: 0 auto;
+    gap: 18px;
+}
+
+.header_title_center {
+    justify-content: center;
+}
+
+#title {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    min-width: max-content;
+    color: var(--text);
+    text-decoration: none;
+}
+
+.brand-mark {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 42px;
+    height: 42px;
+    border-radius: var(--radius);
+    background: var(--surface-strong);
+    color: #fff;
+    font-weight: 900;
+}
+
+.brand-copy {
+    display: grid;
+    gap: 1px;
+}
+
+.brand-copy strong {
+    font-size: 0.98rem;
+}
+
+.brand-copy small {
+    color: var(--text-muted);
+    font-size: 0.74rem;
+    font-weight: 700;
+}
+
+.nav ul {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.nav a {
+    display: inline-flex;
+    align-items: center;
+    min-height: 38px;
+    padding: 0 12px;
+    border-radius: var(--radius);
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    font-weight: 800;
+    text-decoration: none;
+    transition: background 0.2s ease, color 0.2s ease;
+}
+
+.nav a:hover {
+    background: var(--surface-muted);
+    color: var(--text);
+}
+
+.nav .logout-link {
+    color: var(--danger);
+}
+
+.skip-link {
+    position: absolute;
+    left: -9999px;
+    top: 0;
+    z-index: 2000;
+    padding: 12px 18px;
+    border-radius: 0 0 var(--radius) 0;
+    background: var(--accent);
+    color: #fff;
+    font-weight: 800;
+    text-decoration: none;
+}
+
+.skip-link:focus {
+    left: 0;
+}
+
+@media (max-width: 760px) {
+    .header {
+        height: 116px;
+    }
+
+    .header_title {
+        align-items: stretch;
+        flex-direction: column;
+        justify-content: center;
+        width: calc(100% - 20px);
+        gap: 8px;
+    }
+
+    .brand-copy small {
+        display: none;
+    }
+
+    .nav {
+        overflow-x: auto;
+        padding-bottom: 2px;
+    }
+
+    .nav ul {
+        min-width: max-content;
+    }
+
+    .nav a {
+        min-height: 36px;
+        padding: 0 11px;
+        background: rgba(238, 242, 247, 0.72);
+        font-size: 0.84rem;
+    }
+}
